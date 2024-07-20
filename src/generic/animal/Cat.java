@@ -1,11 +1,11 @@
 package generic.animal;
 
-public class Dog extends Animal {
-    public Dog(String name, int size) {
+public class Cat extends Animal {
+    public Cat(String name, int size) {
         super(name, size);
     }
     @Override
     public void sound() {
-        System.out.println("멍멍");
+        System.out.println("냐옹");
     }
 }

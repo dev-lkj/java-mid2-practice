@@ -1,21 +1,26 @@
 package generic.ex1;
 
-public class BoxMain2 {
+public class BoxMain3 {
 
     public static void main(String[] args) {
-        ObjectBox integerBox = new ObjectBox();
+        GenericBox<Integer> integerBox = new GenericBox<Integer>(); //생성 시점에 T 의 타입 결정
         integerBox.set(10);
-        Integer integer = (Integer) integerBox.get(); //Object -> Integer 캐스팅
+        //integerBox.set("문자100"); // Integer 타입만 허용, 컴파일 오류
+        Integer integer = integerBox.get(); // Integer 타입 반환 (캐스팅 X)
         System.out.println("integer = " + integer);
 
-        ObjectBox stringBox = new ObjectBox();
-        stringBox.set("hello");
-        String str = (String) stringBox.get(); //Object -> String 캐스팅
+        GenericBox<String> stringBox = new GenericBox<String>();
+        stringBox.set("hello"); // String 타입만 허용
+        String str = stringBox.get(); // String 타입만 반환
         System.out.println("str = " + str);
 
-        //잘못된 타입의 인수 전달시
-        integerBox.set("문자100");
-        Integer result = (Integer) integerBox.get(); // String -> Integer 캐스팅 예외
-        System.out.println("result = " + result);
+        //원하는 모든 타입 사용 가능
+        GenericBox<Double> doubleBox = new GenericBox<Double>();
+        doubleBox.set(10.5);
+        Double doubleValue = doubleBox.get();
+        System.out.println("doubleValue = " + doubleValue);
+
+        //타입 추론: 생성하는 제네릭 타입 생략 가능
+        GenericBox<Integer> integerBox2 = new GenericBox<>();
     }
 }
