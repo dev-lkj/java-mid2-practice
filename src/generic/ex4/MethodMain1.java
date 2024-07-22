@@ -12,4 +12,5 @@ public class MethodMain1 {
         Integer integerValue = GenericMethod.<Integer>numberMethod(10);
         Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
     }
+
 }
