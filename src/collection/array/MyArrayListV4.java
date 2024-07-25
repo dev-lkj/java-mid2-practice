@@ -1,2 +1,3 @@
-package collection.array;public class MyArrayListV4 {
+package collection.array;
+public class MyArrayListV4 {
 }

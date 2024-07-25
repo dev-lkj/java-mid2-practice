@@ -12,4 +12,5 @@ public class NodeMain1 {
             System.out.println(x.item);
             x = x.next;
         }
+    }
 }
