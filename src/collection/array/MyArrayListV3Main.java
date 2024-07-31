@@ -8,6 +8,7 @@ public class MyArrayListV3Main {
         list.add("b");
         list.add("c");
         System.out.println(list);
+
         //원하는 위치에 추가
         System.out.println("addLast");
         list.add(3, "addLast"); //O(1)
@@ -15,6 +16,7 @@ public class MyArrayListV3Main {
         System.out.println("addFirst");
         list.add(0, "addFirst"); //O(n)
         System.out.println(list);
+
         //삭제
         Object removed1 = list.remove(4);//remove Last O(1)
         System.out.println("remove(4)="+ removed1);
