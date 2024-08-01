@@ -1,5 +1,5 @@
 package collection.array;
-<<<<<<< HEAD
+
 
 import java.util.Arrays;
 
@@ -77,7 +77,4 @@ public class MyArrayListV4<E> {
         return Arrays.toString(Arrays.copyOf(elementData, size)) + " size=" +
                 size + ", capacity=" + elementData.length;
     }
-=======
-public class MyArrayListV4 {
->>>>>>> 6ce98cf1d2ff661a5f421e9e1dbf0e62174a2eed
 }

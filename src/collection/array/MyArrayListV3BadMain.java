@@ -1,5 +1,4 @@
 package collection.array;
-<<<<<<< HEAD
 
 public class MyArrayListV3BadMain {
     public static void main(String[] args) {
@@ -15,7 +14,4 @@ public class MyArrayListV3BadMain {
         // ClassCastException 발생, 문자를 Integer로 캐스팅
         Integer num3 = (Integer) numberList.get(2);
     }
-=======
-public class MyArrayListV3BadMain {
->>>>>>> 6ce98cf1d2ff661a5f421e9e1dbf0e62174a2eed
 }
